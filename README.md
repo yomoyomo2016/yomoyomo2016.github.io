@@ -1,1 +1,0 @@
-# yomoyomo2016.github.io
