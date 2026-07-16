@@ -25,7 +25,7 @@ body[data-mode='light'] {
   --font-color-light-3: #cdcdcd;
   --link-hover-font-color: #fff;
   --banner-background: url("/img/background.png");
-  --banner-font-color: #fff;
+  --banner-font-color: #000000;
   --nav-background-color: rgba(255,255,255,0.188);
   --card-border-color: #d7d7d7;
   --meow-box-shadow: 1px 1px 1px 1px rgba(42,42,42,0.051);
@@ -58,7 +58,7 @@ body[data-mode='dark'] {
   --font-color-light-3: #5b5b67;
   --link-hover-font-color: #2d2d2d;
   --banner-background: url("/img/background.png");
-  --banner-font-color: #e0e0e0;
+  --banner-font-color: #000000;
   --nav-background-color: transparent;
   --card-border-color: #3b3b3b;
   --meow-box-shadow: 1px 1px 1px 1px rgba(187,187,187,0.012);
