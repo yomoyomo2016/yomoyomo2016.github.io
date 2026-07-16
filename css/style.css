@@ -734,7 +734,7 @@ hr {
   overflow: visible;
 }
 hr:before {
-  content: '🐈';
+  content: '🍮';
   position: absolute;
   top: -0.5rem;
   left: 5%;
@@ -4559,4 +4559,8 @@ body[data-mode="dark"] .timeline .timeline-icon:before {
   font-weight: bold;
   font-size: 1.35em;
   margin: 1.3em;
+}
+body,
+html {
+  font-family: 'Noto Sans TC', sans-serif !important;
 }
