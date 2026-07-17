@@ -4564,3 +4564,10 @@ body,
 html {
   font-family: 'Noto Sans TC', sans-serif !important;
 }
+.lyrics-layout {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2;
+  white-space: pre-wrap;
+}
