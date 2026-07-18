@@ -1,10 +1,10 @@
 body[data-mode='light'] {
-  --theme-color: #c4e6cd;
-  --theme-color-light-1: #dcf0e1;
-  --theme-color-light-2: #d0ebd7;
-  --theme-color-light-3: #d6eedc;
-  --theme-color-transparent-1: rgba(196,230,205,0.6);
-  --theme-color-dark-1: #a6d9b4;
+  --theme-color: #7fae77;
+  --theme-color-light-1: #b2cead;
+  --theme-color-light-2: #99be92;
+  --theme-color-light-3: #a5c6a0;
+  --theme-color-transparent-1: rgba(127,174,119,0.6);
+  --theme-color-dark-1: #6ea365;
   --background-color: #fff;
   --background-color-transparent-1: rgba(255,255,255,0.85);
   --background-color-transparent-2: rgba(255,255,255,0.7);

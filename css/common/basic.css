@@ -147,7 +147,7 @@ hr {
   overflow: visible;
 }
 hr:before {
-  content: '🐈';
+  content: '🍮';
   position: absolute;
   top: -0.5rem;
   left: 5%;
