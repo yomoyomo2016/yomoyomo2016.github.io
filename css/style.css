@@ -4570,4 +4570,45 @@ html {
   text-align: left;
   line-height: 2;
   white-space: pre-wrap;
+/* 讓 Feather Icon 能夠正確顯示字體與尺寸 */
+}
+i[class*="feather-"] {
+  font-family: 'feather' !important;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* 強制放大頂部導覽列內的所有圖示 */
+#navbar img,
+#menu-aside img {
+  width: 24px !important;
+  height: 24px !important;
+  vertical-align: sub !important;
+}
+/* 讓選單展開按鈕更顯眼一點 */
+#menu-btn img {
+  width: 28x !important;
+  height: 28px !important;
+}
+/* 使用 CSS nth-child 按順序指定無浪漫傾向旗幟（Aromantic Flag）的 5 個顏色 */
+/* 1. 文章 (深綠色) */
+#nav-menu .menu-item:nth-child(1) img {
+  filter: drop-shadow(0px 0px 0px #3aa63f) brightness(0) saturate(100%) invert(50%) sepia(80%) saturate(400%) hue-rotate(85deg) !important;
+}
+/* 2. 毛纖維 (淺綠色) */
+#nav-menu .menu-item:nth-child(2) img {
+  filter: drop-shadow(0px 0px 0px #a7d46f) brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(45deg) !important;
+}
+/* 3. 毛線球 (純白色) */
+#nav-menu .menu-item:nth-child(3) img {
+  filter: brightness(0) invert(1) !important;
+}
+/* 4. 針線盒 (中灰色) */
+#nav-menu .menu-item:nth-child(4) img {
+  filter: brightness(0) invert(0.7) !important;
+}
+/* 5. 傳送毛毯 (極深灰/黑色) */
+#nav-menu .menu-item:nth-child(5) img {
+  filter: brightness(0) invert(0.2) !important;
 }
