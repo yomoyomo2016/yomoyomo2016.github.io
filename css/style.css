@@ -4627,3 +4627,49 @@ img.aro-5 {
   vertical-align: middle !important;
   filter: brightness(0) invert(1) !important;
 }
+/* =================================─────────
+   手機版側邊欄 (#menu-aside) 5色精確對齊
+   ================================────────── */
+/* 側邊欄 Icon 基本樣式 */
+#menu-aside img {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  vertical-align: middle !important;
+  margin-right: 8px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12) !important;
+}
+#menu-aside a[href*="archives"] img,
+#menu-aside a[href="/"] img,
+#menu-aside .menu-aside-item:nth-of-type(1) img {
+  background-color: #ffc1e0 !important;
+}
+/* 2. 文章 (深綠底 #3AA63F + 白圖) */
+#menu-aside a[href*="archives"] img,
+#menu-aside a[href="/"] img,
+#menu-aside .menu-aside-item:nth-of-type(2) img {
+  background-color: #3aa63f !important;
+}
+/* 3. 毛纖維 / 分類 (淺綠底 #A7D46F + 黑圖) */
+#menu-aside a[href*="categories"] img,
+#menu-aside .menu-aside-item:nth-of-type(3) img {
+  background-color: #a7d46f !important;
+}
+/* 4. 毛線球 / 標籤 (純白底 #FFFFFF + 黑圖 + 細邊框) */
+#menu-aside a[href*="tags"] img,
+#menu-aside .menu-aside-item:nth-of-type(4) img {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+}
+/* 5. 針線盒 / 作品 (中灰底 #AAAAAA + 白圖) */
+#menu-aside a[href*="works"] img,
+#menu-aside a[href*="lyrics"] img,
+#menu-aside .menu-aside-item:nth-of-type(5) img {
+  background-color: #aaa !important;
+}
+/* 6. 關於 (深灰黑底 #2C2C2C + 白圖) */
+#menu-aside a[href*="about"] img,
+#menu-aside .menu-aside-item:nth-of-type(6) img {
+  background-color: #2c2c2c !important;
+}
