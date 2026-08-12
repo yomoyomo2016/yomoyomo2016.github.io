@@ -4579,36 +4579,51 @@ i[class*="feather-"] {
   display: inline-block;
   text-decoration: inherit;
 }
-/* 強制放大頂部導覽列內的所有圖示 */
-#navbar img,
-#menu-aside img {
-  width: 24px !important;
-  height: 24px !important;
-  vertical-align: sub !important;
+/* =================================─────────
+   無浪漫傾向 (Aromantic Flag) 5 色圓底圖示樣式
+   ================================────────── */
+/* 1. 導覽列圓形底座與大小 */
+#nav-menu img.custom-menu-icon {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important; /* 變成正圓形 */
+  padding: 5px !important; /* 圖示內部留白 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12) !important; /* 微微浮雕陰影 */
+  vertical-align: middle !important;
+  transition: all 0.25s ease !important;
 }
-/* 讓選單展開按鈕更顯眼一點 */
-#menu-btn img {
-  width: 28x !important;
-  height: 28px !important;
+#nav-menu a:hover img.custom-menu-icon {
+  transform: scale(1.15) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.22) !important;
 }
-/* 使用 CSS nth-child 按順序指定無浪漫傾向旗幟（Aromantic Flag）的 5 個顏色 */
-/* 1. 文章 (深綠色) */
-#nav-menu .menu-item:nth-child(1) img {
-  filter: drop-shadow(0px 0px 0px #3aa63f) brightness(0) saturate(100%) invert(50%) sepia(80%) saturate(400%) hue-rotate(85deg) !important;
+/* 2. 無浪漫傾向旗幟 5 色專屬底座與 Icon 線條色彩 */
+/* 【第 1 色：深綠底 #3AA63F】+ 白線 Icon (文章 / 子選單) */
+img.aro-1 {
+  background-color: #3aa63f !important;
 }
-/* 2. 毛纖維 (淺綠色) */
-#nav-menu .menu-item:nth-child(2) img {
-  filter: drop-shadow(0px 0px 0px #a7d46f) brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(45deg) !important;
+/* 【第 2 色：淺綠底 #A7D46F】+ 黑線 Icon (毛纖維) */
+img.aro-2 {
+  background-color: #a7d46f !important;
 }
-/* 3. 毛線球 (純白色) */
-#nav-menu .menu-item:nth-child(3) img {
+/* 【第 3 色：純白底 #FFFFFF】+ 黑線 Icon (毛線球 - 解決白底白圖隱形) */
+img.aro-3 {
+  background-color: #fff !important;
+}
+/* 【第 4 色：中灰底 #AAAAAA】+ 白線 Icon (針線盒) */
+img.aro-4 {
+  background-color: #aaa !important;
+}
+/* 【第 5 色：深灰黑底 #2C2C2C】+ 白線 Icon (傳送毛毯) */
+img.aro-5 {
+  background-color: #2c2c2c !important;
+}
+/* 3. 右側搜尋與開關按鈕（乾淨圖示，不加圓底） */
+#nav-function img {
+  width: 36px !important;
+  height: 36px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
   filter: brightness(0) invert(1) !important;
-}
-/* 4. 針線盒 (中灰色) */
-#nav-menu .menu-item:nth-child(4) img {
-  filter: brightness(0) invert(0.7) !important;
-}
-/* 5. 傳送毛毯 (極深灰/黑色) */
-#nav-menu .menu-item:nth-child(5) img {
-  filter: brightness(0) invert(0.2) !important;
 }
