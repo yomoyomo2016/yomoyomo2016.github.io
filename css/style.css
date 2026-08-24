@@ -4673,3 +4673,36 @@ img.aro-5 {
 #menu-aside .menu-aside-item:nth-of-type(6) img {
   background-color: #2c2c2c !important;
 }
+/* ===== 側邊欄電子報訂閱框優化 ===== */
+#sidebar-subscribe .sidebar-card-content {
+  padding: 10px 15px !important;
+}
+/* 移除 follow.it 自帶的白色厚外框與陰影，融入側欄 */
+#sidebar-subscribe .form-preview {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+/* 放大輸入框與按鈕字體 */
+#sidebar-subscribe input[type="email"] {
+  font-size: 15px !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  border: 1px solid #ddd !important;
+  text-align: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+#sidebar-subscribe button,
+#sidebar-subscribe input[type="submit"] {
+  font-size: 15px !important;
+  font-weight: bold !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  margin-top: 8px !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
