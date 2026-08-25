@@ -4711,3 +4711,19 @@ img.aro-5 {
 #home-sidebar .social img {
   filter: invert(65%) sepia(23%) saturate(600%) hue-rotate(65deg) brightness(95%) contrast(85%) !important;
 }
+/* 移除搜尋按鈕上的任何骨架屏/透明覆蓋樣式 */
+#search-btn,
+#search-btn a,
+#search-btn span {
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: none !important;
+}
+#search-btn span {
+  display: inline-block !important;
+  color: #3c3c3c !important; /* 導覽列文字顏色 */
+  font-size: 14px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  margin-left: 4px !important;
+}
