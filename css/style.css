@@ -54,13 +54,13 @@ body[data-mode='dark'] {
   --font-color: #bebec6;
   --font-color-invert: #fcfcfc;
   --font-color-navbar: #bebec6;
-  --font-color-navbar-custom: #bebec6;
+  --font-color-navbar-custom: #FFFFFF;
   --font-color-light-1: #9595a2;
   --font-color-light-2: #808090;
   --font-color-light-3: #5b5b67;
   --link-hover-font-color: #2d2d2d;
-  --banner-background: url("/img/background.png");
-  --banner-font-color: #000000;
+  --banner-background: url("/img/64696247d1edbee2.png");
+  --banner-font-color: #FFFFFF;
   --nav-background-color: transparent;
   --card-border-color: #3b3b3b;
   --meow-box-shadow: 1px 1px 1px 1px rgba(187,187,187,0.012);
@@ -4726,4 +4726,66 @@ img.aro-5 {
   line-height: 1 !important;
   vertical-align: middle !important;
   margin-left: 4px !important;
+}
+/* =================================─────────
+   🌙 歌詞作品區 (.lyrics-section) 深色模式強制反轉
+   ================================────────── */
+body[data-mode="dark"] .lyrics-section {
+  background: #232326 !important; /* 強制覆蓋原本的 #fdfdfd 白底 */
+  color: #f0f0f5 !important; /* 基礎文字轉白 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+/* 標題與超連結文字顏色 */
+body[data-mode="dark"] .lyrics-section h3,
+body[data-mode="dark"] .lyrics-section a {
+  color: #e6e6ea !important;
+}
+/* 滑鼠懸停的高亮粉色 */
+body[data-mode="dark"] .lyrics-section a:hover {
+  color: #ffd6fa !important;
+}
+/* 將清單項目下方原本白亮的虛線框 (#eee) 改為深灰色，避免刺眼 */
+body[data-mode="dark"] .lyrics-section li {
+  border-bottom: 1px dashed #38383c !important;
+}
+/* =================================─────────
+   🌙 移除側邊欄卡片標題（公告、分類等）的突兀外框
+   ================================────────── */
+body[data-mode="dark"] .sidebar-card-headline {
+  border: none !important; /* 移除完整的方框線 */
+  background: transparent !important; /* 確保背景透明，融入卡片 */
+  box-shadow: none !important; /* 移除任何可能的陰影 */
+  border-bottom: 1px solid #38383c !important; /* (選用) 在標題下方保留一條極細的深灰分隔線，若不需要這行可刪除 */
+}
+/* =================================─────────
+   🌙 歌詞作品區 (.lyrics-section) 深色模式強制反轉
+   ================================────────── */
+body[data-mode="dark"] .lyrics-section {
+  background: #232326 !important; /* 強制覆蓋原本的 #fdfdfd 白底 */
+  color: #f0f0f5 !important; /* 基礎文字轉白 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+/* 標題與超連結文字顏色 */
+body[data-mode="dark"] .lyrics-section h3,
+body[data-mode="dark"] .lyrics-section a {
+  color: #e6e6ea !important;
+}
+/* 滑鼠懸停的高亮粉色 */
+body[data-mode="dark"] .lyrics-section a:hover {
+  color: #ffd6fa !important;
+}
+/* 將清單項目下方原本白亮的虛線框 (#eee) 改為深灰色，避免刺眼 */
+body[data-mode="dark"] .lyrics-section li {
+  border-bottom: 1px dashed #38383c !important;
+}
+/* =================================─────────
+   ☀️ 淺色 (Light) 模式歌詞作品區滑鼠懸停效果
+   ========================================== */
+.lyrics-section a {
+  transition: color 0.2s ease, padding-left 0.2s ease !important;
+}
+/* 滑鼠移上去時變為主題綠色，並稍微向右微移增加互動感 */
+.lyrics-section a:hover {
+  color: #7fae77 !important; /* 主題綠色（若想改粉色可換 #e07bb6） */
+  padding-left: 6px !important; /* 微向右滑動效果（選用） */
 }
