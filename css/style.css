@@ -4706,3 +4706,8 @@ img.aro-5 {
   width: 100% !important;
   cursor: pointer !important;
 }
+/* 將首頁側邊欄 (#home-sidebar) 所有的卡片標題圖示與社群圖示統一轉為主題綠色 */
+#home-sidebar .sidebar-card-headline img,
+#home-sidebar .social img {
+  filter: invert(65%) sepia(23%) saturate(600%) hue-rotate(65deg) brightness(95%) contrast(85%) !important;
+}
