@@ -1208,6 +1208,27 @@ body[data-mode="dark"] .home-article-info .icon {
 .read-more-btn:hover {
   color: var(--theme-color);
 }
+@media (min-width: 900px) {
+  .home-article-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .home-article-cover img {
+    position: static;
+    transform: none;
+  }
+  .home-article-content[cover=''] {
+    margin-left: 33%;
+  }
+  .home-article-info {
+    max-width: 65%;
+  }
+}
 @media (max-width: 900px) {
   #home-content {
     flex-direction: column;
@@ -4559,6 +4580,53 @@ body[data-mode="dark"] .timeline .timeline-icon:before {
   font-weight: bold;
   font-size: 1.35em;
   margin: 1.3em;
+}
+.comment {
+  margin-top: 3.5rem;
+}
+@media (max-width: 900px) {
+  .comment {
+    margin-top: 3em;
+  }
+}
+:root {
+  --waline-theme-color: #7fae77 !important;
+  --waline-active-color: #b2cead !important;
+  --waline-badge-color: #7fae77 !important;
+}
+:root body[data-mode='dark'] {
+  --waline-bg-color: rgba(45,45,45,0.7) !important;
+  --waline-color: #bebec6 !important;
+  --waline-theme-color: #ffd6fa !important;
+  --waline-active-color: #ffe6fc !important;
+  --waline-badge-color: #ffd6fa !important;
+  --waline-info-color: #808090;
+  --waline-info-bg-color: #373737;
+}
+@media (max-width: 900px) {
+  :root {
+    --waline-font-size: 15px !important;
+  }
+}
+div[data-waline] p {
+  margin: 0;
+}
+.wl-header label,
+.wl-header input {
+  font-size: 0.85em !important;
+}
+.wl-card .wl-head .wl-nick {
+  color: #737373;
+}
+.wl-card .wl-badge {
+  line-height: 1.5;
+  margin-inline-end: 0.5em;
+}
+.wl-card .wl-content .wl-reply-to {
+  margin: 0 0.5em 0 0 !important;
+}
+body[data-mode='dark'] .wl-card .wl-head .wl-nick {
+  color: #9595a2;
 }
 body,
 html {

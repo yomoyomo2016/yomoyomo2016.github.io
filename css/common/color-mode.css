@@ -52,13 +52,13 @@ body[data-mode='dark'] {
   --font-color: #bebec6;
   --font-color-invert: #fcfcfc;
   --font-color-navbar: #bebec6;
-  --font-color-navbar-custom: #bebec6;
+  --font-color-navbar-custom: #FFFFFF;
   --font-color-light-1: #9595a2;
   --font-color-light-2: #808090;
   --font-color-light-3: #5b5b67;
   --link-hover-font-color: #2d2d2d;
-  --banner-background: url("/img/background.png");
-  --banner-font-color: #000000;
+  --banner-background: url("/img/64696247d1edbee2.png");
+  --banner-font-color: #FFFFFF;
   --nav-background-color: transparent;
   --card-border-color: #3b3b3b;
   --meow-box-shadow: 1px 1px 1px 1px rgba(187,187,187,0.012);
