@@ -4857,3 +4857,7 @@ body[data-mode="dark"] .lyrics-section li {
   color: #7fae77 !important; /* 主題綠色（若想改粉色可換 #e07bb6） */
   padding-left: 6px !important; /* 微向右滑動效果（選用） */
 }
+.wl-card .wl-head .wl-location,
+.wl-card .wl-head .wl-addr {
+  display: none !important;
+}

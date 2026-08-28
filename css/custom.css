@@ -1,0 +1,5 @@
+/* 隱藏 Waline 留言區的地理位置與電信商標籤 */
+.wl-card .wl-head .wl-location,
+.wl-card .wl-head .wl-addr {
+  display: none !important;
+}
