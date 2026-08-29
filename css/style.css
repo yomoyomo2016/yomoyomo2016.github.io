@@ -4863,4 +4863,11 @@ body[data-mode="dark"] .lyrics-section li {
 .wl-card .wl-meta-item[data-type="location"],
 .wl-card .wl-user-meta .wl-addr {
   display: none !important;
+/* 精準隱藏 Waline 地區與電信商標籤 */
+}
+span.wl-addr,
+.wl-addr,
+[data-value*="台湾省"],
+[data-value*="中华电信"] {
+  display: none !important;
 }
