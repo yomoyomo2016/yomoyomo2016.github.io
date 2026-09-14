@@ -41,7 +41,7 @@ document.body.setAttribute('data-mode', localStorage.getItem('color-mode'));
       emoji: ["https://unpkg.com/@waline/emojis@1.4.0/tw","https://unpkg.com/@waline/emojis@1.4.0/alus","https://unpkg.com/@waline/emojis@1.4.0/bilibili"],
       reaction: ["/img/12345.png"],
       path: window.location.pathname.replace(/([^\/#]+)(?:#.+|)$/,'$1/'),
-    }, {"locale":{"placeholder":"要留言咩～"},"commentSorting":"latest","requiredMeta":["nick","mail"]}))
+    }, {"locale":{"placeholder":"要留言咩～","reactionTitle":"妳認為這篇文章怎麼樣？ ","reaction0":"思考"},"commentSorting":"latest","requiredMeta":["nick","mail"]}))
   }
 
   const loadWaline = async () => {
