@@ -4871,3 +4871,20 @@ span.wl-addr,
 [data-value*="中华电信"] {
   display: none !important;
 }
+/* ===== 修復友情連結頂部引述文字被引號遮擋的問題 ===== */
+#friends-desc,
+.friends-desc,
+.friends-page-desc {
+  position: relative !important;
+  padding-left: 38px !important; /* 向右推開 38px，把空間留給引號圖示，不再遮擋第一個字 */
+  line-height: 1.8 !important;
+  display: inline-block !important;
+}
+/* 確保引號圖示固定在左上角適當位置 */
+#friends-desc::before,
+.friends-desc::before,
+.friends-page-desc::before {
+  left: 0 !important;
+  top: -6px !important;
+  opacity: 0.25 !important; /* 稍微淡化引號透明度，看起來更自然精緻 */
+}
