@@ -2,22 +2,24 @@ const friendsData = {
   friends: [
     {
       class: {
-        name: '傳送毛毯',
-        desc: '常常拜訪的友站～',
-        random: false // 設為 false 會依照先後順序顯示；設為 true 則每次整理隨機排列
+        name: '常常拜訪的友站～', // 改成分類別名，避免跟頁面大標題「傳送毛毯」重複撞名
+        desc: '傳送',
+        random: false
       },
       list: [
         {
           name: '資工小廢物 - JN',
           url: 'https://blog.giveanornot.com/',
-          avatar: 'https://blog.giveanornot.com/favicon.ico', // 若對方有專屬頭像網址可直接替換
+          // 使用 GitHub 提供的頭像服務（以 JN 的 GitHub 帳號為例，可穩定讀取）
+          avatar: 'https://github.com/GiveAnOrNot.png', 
           desc: '資工系畢業，但其實沒有很會寫程式'
         },
         {
-          name: '來自月球的 L | 納莉 Anabel | Substack',
-          url: 'https://anabel.substack.com/', // 請確認並填入納莉完整的 Substack 網址
-          avatar: 'https://substack.com/favicon.ico', // 若有納莉的頭像圖片連結可替換於此
-          desc: '正職是考生的業餘小說作者，希望務正業的時間可以多一點。'
+          name: '來自月球的 L ',
+          url: 'https://anabel.substack.com/',
+          // 使用 Substack 平台的標準圖示
+          avatar: 'https://substack.com/favicon.ico',
+          desc: '正職是考生的業餘小說作者'
         }
       ]
     }
