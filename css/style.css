@@ -4888,3 +4888,36 @@ span.wl-addr,
   top: -6px !important;
   opacity: 0.25 !important; /* 稍微淡化引號透明度，看起來更自然精緻 */
 }
+/* =================================─────────
+   🛠️ 徹底修復「傳送毛毯」引言文字被引號遮擋問題
+   ========================================== */
+/* 1. 針對整塊引言容器強制留白並重設排版 */
+.friends-desc,
+.friends-page-desc,
+#friends-desc,
+.page-friends-desc,
+blockquote.friends-desc {
+  position: relative !important;
+  padding-left: 45px !important; /* 強制將整塊文字向右推開 45px */
+  margin-left: 0 !important;
+  display: block !important;
+}
+/* 2. 避免 Markdown 自動包覆的 <p> 標籤跑位 */
+.friends-desc p,
+.friends-page-desc p,
+#friends-desc p {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.8 !important;
+}
+/* 3. 將絕對定位的引號偽元素固定在最左側 */
+.friends-desc::before,
+.friends-page-desc::before,
+#friends-desc::before,
+blockquote.friends-desc::before {
+  position: absolute !important;
+  left: 0 !important;
+  top: -2px !important;
+  margin: 0 !important;
+}
