@@ -2,6 +2,22 @@ const friendsData = {
   friends: [
     {
       class: {
+        name: '永遠の天使🎀🪽', // 改成分類別名，避免跟頁面大標題「傳送毛毯」重複撞名
+        desc: '推し♡',
+        random: false
+      },
+      list: [
+        {
+          name: '萌留みみん/Moeru Mimin',
+          url: 'https://www.youtube.com/@MoeruMimin',
+          // 使用 GitHub 提供的頭像服務（以 JN 的 GitHub 帳號為例，可穩定讀取）
+          avatar: 'https://yt3.googleusercontent.com/sxd1f1GZuFZ9f-hrSa4c5GcHoDxJw5FJO6bk2EXU_veoboNvZrqlx5Ww9OzOIUQXr7_gO-wVDg=s160-c-k-c0x00ffffff-no-rj', 
+          desc: '現代社会に潰されるマスターの心を支えにきました⋯♡🪽'
+        }
+      ]
+    },
+    {
+      class: {
         name: '常常拜訪的友站～', // 改成分類別名，避免跟頁面大標題「傳送毛毯」重複撞名
         desc: '傳送',
         random: false
