@@ -21,7 +21,7 @@ const friendsData = {
         name: '常常拜訪&推薦ㄉ友站～', // 改成分類別名，避免跟頁面大標題「傳送毛毯」重複撞名
         desc: '傳送',
         random: true
-      }ㄉ
+      }
       list: [
         {
           name: 'MEOW-小橘貓',
@@ -65,7 +65,7 @@ const friendsData = {
           avatar: 'https://yurizaka.com/logo.png',
           desc: '百合作品資料庫'
         }
-      {
+        {
           name: '水影獨舞在永恆 - lazurloner’s Blog',
           url: 'https://lazur.me/',
           // 
