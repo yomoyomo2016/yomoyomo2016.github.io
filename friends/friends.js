@@ -43,7 +43,7 @@ const friendsData = {
         {
           name: '嶺上苓的小屋',
           url: 'https://lingonhills.github.io/',
-          avatar: 'https://lingonhills.github.io/favicon.ico', // Instagram CDN 連結通常帶有時效防盜鏈，若破圖建議改用 favicon
+          avatar: 'https://lingonhills.github.io/media/website/0720-Wang-Zhan-logo.png', // Instagram CDN 連結通常帶有時效防盜鏈，若破圖建議改用 favicon
           desc: '嗨，我是嶺上苓，我有在畫一些漫畫。'
         },
         {
