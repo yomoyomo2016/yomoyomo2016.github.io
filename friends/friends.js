@@ -43,28 +43,28 @@ const friendsData = {
           // 使用 Substack 平台的標準圖示
           avatar: 'https://substack.com/favicon.ico',
           desc: '正職是考生的業餘小說作者'
-        }
+        },
         {
           name: '嶺上苓的小屋',
           url: 'https://lingonhills.github.io/',
           // 
           avatar: 'https://scontent-tpe5-1.cdninstagram.com/v/t51.82787-19/751001219_18046754444633267_3441101762396552935_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zMjAuYzIifQ&_nc_ht=scontent-tpe5-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2gHCozYPFOuvQJLEmiJ6UjDSEv9LwXKaPOHB2y5vrPh8tURuFS0mGgo-avSktT-j8Dw&_nc_ohc=xygwuAUET40Q7kNvwFx5CGl&_nc_gid=GuWYrT2cfkKbEPJ8w2gn-w&edm=APs17CUBAAAA&ccb=7-5&oh=00_AQLcqloul234eGK0IQZ4cj-NQ3f-AdyLDDMo1coxYvbdxQ&oe=6ABD639F&_nc_sid=10d13b',
           desc: '嗨，我是嶺上苓，我有在畫一些漫畫。'
-        }
+        },
         {
           name: 'NudoBlog - 小透明龍女 ',
           url: 'https://blog.nudoragon.com/',
           // 
           avatar: 'https://blog.nudoragon.com/static/(pic)(2)2560px-Transgender_Pride_flag.svg.png',
           desc: ''
-        }
+        },
         {
           name: '百合坂',
           url: 'https://yurizaka.com/',
           // 
           avatar: 'https://yurizaka.com/logo.png',
           desc: '百合作品資料庫'
-        }
+        },
         {
           name: '水影獨舞在永恆 - lazurloner’s Blog',
           url: 'https://lazur.me/',
