@@ -581,6 +581,50 @@ body[data-mode='dark'] {
     opacity: 1;
   }
 }
+@-moz-keyframes color-change {
+  0% {
+    color: var(--font-color);
+  }
+  50% {
+    color: var(--theme-color);
+  }
+  100% {
+    color: var(--font-color);
+  }
+}
+@-webkit-keyframes color-change {
+  0% {
+    color: var(--font-color);
+  }
+  50% {
+    color: var(--theme-color);
+  }
+  100% {
+    color: var(--font-color);
+  }
+}
+@-o-keyframes color-change {
+  0% {
+    color: var(--font-color);
+  }
+  50% {
+    color: var(--theme-color);
+  }
+  100% {
+    color: var(--font-color);
+  }
+}
+@keyframes color-change {
+  0% {
+    color: var(--font-color);
+  }
+  50% {
+    color: var(--theme-color);
+  }
+  100% {
+    color: var(--font-color);
+  }
+}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -1653,7 +1697,7 @@ body[data-mode="dark"] .home-article-info .icon {
   display: block;
   height: 2.5px;
   width: 0;
-  background-color: #FFB347;
+  background-color: #3f5841;
   transition: width 0.5s ease;
 }
 .tag-container[tag-style="cloud"] a:hover {
@@ -4487,6 +4531,41 @@ body[data-mode="dark"] .note {
     padding: 0.3em 0.8em;
   }
 }
+span.text-tag {
+  color: var(--theme-color);
+}
+span.text-tag.pink {
+  color: #ff7ca1;
+}
+span.text-tag.purple {
+  color: #c2a0ff;
+}
+span.text-tag.yellow {
+  color: #ffcf22;
+}
+span.text-tag.blue {
+  color: #7fbfff;
+}
+span.text-tag.green {
+  color: #7ed86e;
+}
+span.text-tag[type="2"] {
+  text-decoration: underline wavy;
+}
+span.text-tag[type="3"] {
+  text-decoration: underline dashed;
+  text-underline-offset: 4.5px;
+}
+span.text-tag[type="4"] {
+  text-decoration: underline dotted;
+  text-underline-offset: 4.5px;
+}
+span.text-tag[type="5"] {
+  text-decoration: line-through;
+}
+span.text-tag[type="6"] {
+  animation: color-change 2.5s ease-in-out infinite;
+}
 .timeline {
   border-left: 2px solid var(--background-color-grey);
   margin: 1.6rem 0 2rem 1rem;
@@ -4638,7 +4717,6 @@ html {
   text-align: left;
   line-height: 2;
   white-space: pre-wrap;
-/* 讓 Feather Icon 能夠正確顯示字體與尺寸 */
 }
 i[class*="feather-"] {
   font-family: 'feather' !important;
@@ -4649,14 +4727,13 @@ i[class*="feather-"] {
 }
 /* =================================─────────
    無浪漫傾向 (Aromantic Flag) 5 色圓底圖示樣式
-   ================================────────── */
-/* 1. 導覽列圓形底座與大小 */
+   ========================================== */
 #nav-menu img.custom-menu-icon {
   width: 36px !important;
   height: 36px !important;
-  border-radius: 50% !important; /* 變成正圓形 */
-  padding: 5px !important; /* 圖示內部留白 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.12) !important; /* 微微浮雕陰影 */
+  border-radius: 50% !important;
+  padding: 5px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12) !important;
   vertical-align: middle !important;
   transition: all 0.25s ease !important;
 }
@@ -4664,28 +4741,21 @@ i[class*="feather-"] {
   transform: scale(1.15) !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.22) !important;
 }
-/* 2. 無浪漫傾向旗幟 5 色專屬底座與 Icon 線條色彩 */
-/* 【第 1 色：深綠底 #3AA63F】+ 白線 Icon (文章 / 子選單) */
 img.aro-1 {
   background-color: #3aa63f !important;
 }
-/* 【第 2 色：淺綠底 #A7D46F】+ 黑線 Icon (毛纖維) */
 img.aro-2 {
   background-color: #a7d46f !important;
 }
-/* 【第 3 色：純白底 #FFFFFF】+ 黑線 Icon (毛線球 - 解決白底白圖隱形) */
 img.aro-3 {
   background-color: #fff !important;
 }
-/* 【第 4 色：中灰底 #AAAAAA】+ 白線 Icon (針線盒) */
 img.aro-4 {
   background-color: #aaa !important;
 }
-/* 【第 5 色：深灰黑底 #2C2C2C】+ 白線 Icon (傳送毛毯) */
 img.aro-5 {
   background-color: #2c2c2c !important;
 }
-/* 3. 右側搜尋與開關按鈕（乾淨圖示，不加圓底） */
 #nav-function img {
   width: 36px !important;
   height: 36px !important;
@@ -4696,9 +4766,8 @@ img.aro-5 {
   filter: brightness(0) invert(1) !important;
 }
 /* =================================─────────
-   手機版側邊欄 (#menu-aside) 5色精確對齊
-   ================================────────── */
-/* 側邊欄 Icon 基本樣式 */
+   手機版側邊欄 (#menu-aside) 樣式
+   ========================================== */
 #menu-aside img {
   width: 20px !important;
   height: 20px !important;
@@ -4713,30 +4782,23 @@ img.aro-5 {
 #menu-aside .menu-aside-item:nth-of-type(1) img {
   background-color: #ffc1e0 !important;
 }
-/* 2. 文章 (深綠底 #3AA63F + 白圖) */
-#menu-aside a[href*="archives"] img,
-#menu-aside a[href="/"] img,
 #menu-aside .menu-aside-item:nth-of-type(2) img {
   background-color: #3aa63f !important;
 }
-/* 3. 毛纖維 / 分類 (淺綠底 #A7D46F + 黑圖) */
 #menu-aside a[href*="categories"] img,
 #menu-aside .menu-aside-item:nth-of-type(3) img {
   background-color: #a7d46f !important;
 }
-/* 4. 毛線球 / 標籤 (純白底 #FFFFFF + 黑圖 + 細邊框) */
 #menu-aside a[href*="tags"] img,
 #menu-aside .menu-aside-item:nth-of-type(4) img {
   background-color: #fff !important;
   border: 1px solid #ccc !important;
 }
-/* 5. 針線盒 / 作品 (中灰底 #AAAAAA + 白圖) */
 #menu-aside a[href*="works"] img,
 #menu-aside a[href*="lyrics"] img,
 #menu-aside .menu-aside-item:nth-of-type(5) img {
   background-color: #aaa !important;
 }
-/* 6. 關於 (深灰黑底 #2C2C2C + 白圖) */
 #menu-aside a[href*="about"] img,
 #menu-aside .menu-aside-item:nth-of-type(6) img {
   background-color: #2c2c2c !important;
@@ -4745,7 +4807,6 @@ img.aro-5 {
 #sidebar-subscribe .sidebar-card-content {
   padding: 10px 15px !important;
 }
-/* 移除 follow.it 自帶的白色厚外框與陰影，融入側欄 */
 #sidebar-subscribe .form-preview {
   background: transparent !important;
   box-shadow: none !important;
@@ -4754,7 +4815,6 @@ img.aro-5 {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* 放大輸入框與按鈕字體 */
 #sidebar-subscribe input[type="email"] {
   font-size: 15px !important;
   padding: 10px !important;
@@ -4774,12 +4834,10 @@ img.aro-5 {
   width: 100% !important;
   cursor: pointer !important;
 }
-/* 將首頁側邊欄 (#home-sidebar) 所有的卡片標題圖示與社群圖示統一轉為主題綠色 */
 #home-sidebar .sidebar-card-headline img,
 #home-sidebar .social img {
   filter: invert(65%) sepia(23%) saturate(600%) hue-rotate(65deg) brightness(95%) contrast(85%) !important;
 }
-/* 移除搜尋按鈕上的任何骨架屏/透明覆蓋樣式 */
 #search-btn,
 #search-btn a,
 #search-btn span {
@@ -4789,81 +4847,53 @@ img.aro-5 {
 }
 #search-btn span {
   display: inline-block !important;
-  color: #3c3c3c !important; /* 導覽列文字顏色 */
+  color: #3c3c3c !important;
   font-size: 14px !important;
   line-height: 1 !important;
   vertical-align: middle !important;
   margin-left: 4px !important;
 }
 /* =================================─────────
-   🌙 歌詞作品區 (.lyrics-section) 深色模式強制反轉
-   ================================────────── */
+   🌙 歌詞作品區 (.lyrics-section) 深色模式
+   ========================================== */
 body[data-mode="dark"] .lyrics-section {
-  background: #232326 !important; /* 強制覆蓋原本的 #fdfdfd 白底 */
-  color: #f0f0f5 !important; /* 基礎文字轉白 */
+  background: #232326 !important;
+  color: #f0f0f5 !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
 }
-/* 標題與超連結文字顏色 */
 body[data-mode="dark"] .lyrics-section h3,
 body[data-mode="dark"] .lyrics-section a {
   color: #e6e6ea !important;
 }
-/* 滑鼠懸停的高亮粉色 */
 body[data-mode="dark"] .lyrics-section a:hover {
   color: #ffd6fa !important;
 }
-/* 將清單項目下方原本白亮的虛線框 (#eee) 改為深灰色，避免刺眼 */
 body[data-mode="dark"] .lyrics-section li {
   border-bottom: 1px dashed #38383c !important;
 }
-/* =================================─────────
-   🌙 移除側邊欄卡片標題（公告、分類等）的突兀外框
-   ================================────────── */
 body[data-mode="dark"] .sidebar-card-headline {
-  border: none !important; /* 移除完整的方框線 */
-  background: transparent !important; /* 確保背景透明，融入卡片 */
-  box-shadow: none !important; /* 移除任何可能的陰影 */
-  border-bottom: 1px solid #38383c !important; /* (選用) 在標題下方保留一條極細的深灰分隔線，若不需要這行可刪除 */
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #38383c !important;
 }
 /* =================================─────────
-   🌙 歌詞作品區 (.lyrics-section) 深色模式強制反轉
-   ================================────────── */
-body[data-mode="dark"] .lyrics-section {
-  background: #232326 !important; /* 強制覆蓋原本的 #fdfdfd 白底 */
-  color: #f0f0f5 !important; /* 基礎文字轉白 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-}
-/* 標題與超連結文字顏色 */
-body[data-mode="dark"] .lyrics-section h3,
-body[data-mode="dark"] .lyrics-section a {
-  color: #e6e6ea !important;
-}
-/* 滑鼠懸停的高亮粉色 */
-body[data-mode="dark"] .lyrics-section a:hover {
-  color: #ffd6fa !important;
-}
-/* 將清單項目下方原本白亮的虛線框 (#eee) 改為深灰色，避免刺眼 */
-body[data-mode="dark"] .lyrics-section li {
-  border-bottom: 1px dashed #38383c !important;
-}
-/* =================================─────────
-   ☀️ 淺色 (Light) 模式歌詞作品區滑鼠懸停效果
+   ☀️ 淺色模式歌詞作品區滑鼠懸停效果
    ========================================== */
 .lyrics-section a {
   transition: color 0.2s ease, padding-left 0.2s ease !important;
 }
-/* 滑鼠移上去時變為主題綠色，並稍微向右微移增加互動感 */
 .lyrics-section a:hover {
-  color: #7fae77 !important; /* 主題綠色（若想改粉色可換 #e07bb6） */
-  padding-left: 6px !important; /* 微向右滑動效果（選用） */
+  color: #7fae77 !important;
+  padding-left: 6px !important;
 }
+/* Waline 隱藏 IP 與位置 */
 .wl-card .wl-head .wl-addr,
 .wl-card .wl-head .wl-location,
 .wl-card .wl-meta-item[data-type="addr"],
 .wl-card .wl-meta-item[data-type="location"],
 .wl-card .wl-user-meta .wl-addr {
   display: none !important;
-/* 精準隱藏 Waline 地區與電信商標籤 */
 }
 span.wl-addr,
 .wl-addr,
@@ -4871,38 +4901,17 @@ span.wl-addr,
 [data-value*="中华电信"] {
   display: none !important;
 }
-/* ===== 修復友情連結頂部引述文字被引號遮擋的問題 ===== */
-#friends-desc,
-.friends-desc,
-.friends-page-desc {
-  position: relative !important;
-  padding-left: 38px !important; /* 向右推開 38px，把空間留給引號圖示，不再遮擋第一個字 */
-  line-height: 1.8 !important;
-  display: inline-block !important;
-}
-/* 確保引號圖示固定在左上角適當位置 */
-#friends-desc::before,
-.friends-desc::before,
-.friends-page-desc::before {
-  left: 0 !important;
-  top: -6px !important;
-  opacity: 0.25 !important; /* 稍微淡化引號透明度，看起來更自然精緻 */
-}
-/* =================================─────────
-   🛠️ 徹底修復「傳送毛毯」引言文字被引號遮擋問題
-   ========================================== */
-/* 1. 針對整塊引言容器強制留白並重設排版 */
+/* 修復友情連結引言排版 */
 .friends-desc,
 .friends-page-desc,
 #friends-desc,
 .page-friends-desc,
 blockquote.friends-desc {
   position: relative !important;
-  padding-left: 45px !important; /* 強制將整塊文字向右推開 45px */
+  padding-left: 45px !important;
   margin-left: 0 !important;
   display: block !important;
 }
-/* 2. 避免 Markdown 自動包覆的 <p> 標籤跑位 */
 .friends-desc p,
 .friends-page-desc p,
 #friends-desc p {
@@ -4911,7 +4920,6 @@ blockquote.friends-desc {
   padding: 0 !important;
   line-height: 1.8 !important;
 }
-/* 3. 將絕對定位的引號偽元素固定在最左側 */
 .friends-desc::before,
 .friends-page-desc::before,
 #friends-desc::before,
