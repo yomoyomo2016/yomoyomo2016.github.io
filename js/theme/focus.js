@@ -1,0 +1,1 @@
+let initPageFocus=()=>{let origin_title=document.title,timer;document.addEventListener('visibilitychange',function(){document.hidden?(document.title=GLOBALCONFIG.onblur_title,clearTimeout(timer),timer=setTimeout(()=>{document.title=origin_title},2e3)):document.title=origin_title})};export default initPageFocus;
