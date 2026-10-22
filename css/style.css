@@ -4929,3 +4929,13 @@ blockquote.friends-desc::before {
   top: -2px !important;
   margin: 0 !important;
 }
+/* 修正圖片說明文字的置中與縮排偏移 */
+.markdown .image-caption,
+.post-content .image-caption {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  text-indent: 0 !important; /* 👈 解除文章預設縮排推擠 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
