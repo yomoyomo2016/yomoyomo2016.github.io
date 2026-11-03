@@ -1,0 +1,70 @@
+遮罩
+
+{% mask 'Content' [type] [style] %}
+
+pink/yellow/blue/green/purple/theme /default (灰色)
+
+顏色標記
+
+{% text 'Content' [color] [type] %}
+
+pink/yellow/blue/green/purple/theme 
+
+1（默认，仅改变颜色）/2（波浪下划线）/3（虚线下划线）/4（点点下划线）/5（删除线）/6（闪烁变色，仅支持主题色）
+
+訊息框
+
+{% note [style] %}
+Any Content
+{% endnote %}
+
+pink/yellow/blue/green/purple/light
+
+摺疊框
+
+{% fold title [style] [status] %}
+Any Content
+{% endfold %}
+
+pink/yellow/blue/green/purple/light
+
+
+網址按鈕(會自動排列)
+
+{% button %}
+- name: 
+  url: 
+  desc: 
+  icon: 
+{% endbutton %}
+
+選項卡
+
+{% tabs tabId[,activeIndex] %}
+
+<!-- tab [tabName] -->
+
+Any Content
+
+<!-- endtab -->
+
+{% endtabs %}
+
+時間線
+
+{% timeline title[,style] %}
+
+<!-- timeline title -->
+
+Any Content
+
+<!-- endtimeline -->
+
+{% endtimeline %}
+
+style:
+pink/yellow/blue/green/purple
+
+標題
+{% title 'Title Content' %}
+
